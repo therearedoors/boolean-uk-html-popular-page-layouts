@@ -12,8 +12,8 @@
     "bckground box-a1 box-b2 box-a3 bckground" 15%
     "bckground box-a1 box-b2 box-b3 bckground" 5%
     "bckground box-b1 box-b2 box-b3 bckground" 20%
-    "bckground box-b1 box-c2 box-b3 bckground" 5%
-    "bckground box-c1 box-c2 box-c3 bckground" 35% /
+    "bckground box-b1 box-b2 box-b3 bckground" 5%
+    "bckground box-c1 box-b2 box-c3 bckground" 35% /
     20% 20% 20% 20% 20%;
 
     Seems it wouldn't work, because the 'bckground' section was divided? Is there a way to split an area in a grid?
@@ -27,8 +27,8 @@
     "bckground1 box-a1 box-b2 box-a3 bckground" 15%
     "bckground1 box-a1 box-b2 box-b3 bckground" 5%
     "bckground1 box-b1 box-b2 box-b3 bckground" 20%
-    "bckground1 box-b1 box-c2 box-b3 bckground" 5%
-    "bckground1 box-c1 box-c2 box-c3 bckground" 35% /
+    "bckground1 box-b1 box-b2 box-b3 bckground" 5%
+    "bckground1 box-c1 box-b2 box-c3 bckground" 35% /
     20% 20% 20% 20% 20%;
 }
 .header {
@@ -61,11 +61,11 @@
 .box-b2 {
     grid-area: box-b2;
 }
+.box-b3 {
+    grid-area: box-b3;
+}
 .box-c1 {
     grid-area: box-c1;
-}
-.box-c2 {
-    grid-area: box-c2;
 }
 .box.c3 {
     grid-area: box-c3;
