@@ -1,0 +1,72 @@
+* {
+    margin:0;
+}
+/* initially tried something like this:
+
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    "header header header header header" 10%
+    "bckground box-a1 box-a2 box-a3 bckground" 10%
+    "bckground box-a1 box-b2 box-a3 bckground" 15%
+    "bckground box-a1 box-b2 box-b3 bckground" 5%
+    "bckground box-b1 box-b2 box-b3 bckground" 20%
+    "bckground box-b1 box-c2 box-b3 bckground" 5%
+    "bckground box-c1 box-c2 box-c3 bckground" 35% /
+    20% 20% 20% 20% 20%;
+
+    Seems it wouldn't work, because the 'bckground' section was divided? Is there a way to split an area in a grid?
+*/
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    "header header header header header" 10%
+    "bckground1 box-a1 box-a2 box-a3 bckground" 10%
+    "bckground1 box-a1 box-b2 box-a3 bckground" 15%
+    "bckground1 box-a1 box-b2 box-b3 bckground" 5%
+    "bckground1 box-b1 box-b2 box-b3 bckground" 20%
+    "bckground1 box-b1 box-c2 box-b3 bckground" 5%
+    "bckground1 box-c1 box-c2 box-c3 bckground" 35% /
+    20% 20% 20% 20% 20%;
+}
+.header {
+    grid-area: header;
+    background-color:royalblue;
+}
+.bckground1 {
+    grid-area: bckground1;
+    background-color:lightgrey;
+}
+.bckground {
+    grid-area: bckground;
+    background-color: lightgrey;
+}
+.box {
+    background-color:white;
+}
+.box-a1 {
+    grid-area: box-a1;
+}
+.box-a2 {
+    grid-area: box-a2;
+}
+.box-a3 {
+    grid-area: box-a3;
+}
+.box-b1 {
+    grid-area: box-b1;
+}
+.box-b2 {
+    grid-area: box-b2;
+}
+.box-c1 {
+    grid-area: box-c1;
+}
+.box-c2 {
+    grid-area: box-c2;
+}
+.box.c3 {
+    grid-area: box-c3;
+}

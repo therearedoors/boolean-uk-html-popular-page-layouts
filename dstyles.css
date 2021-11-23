@@ -1,0 +1,27 @@
+* {
+    margin:0;
+}
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template: 
+    "c-one  header  header"  5%
+    "c-one  c-two   c-three" 95% /
+    5% 20% 75%;
+}
+.header {
+        grid-area:header;
+        background-color:darkkhaki;
+}
+.c-one {
+    grid-area:c-one;
+    background-color:darkgray;
+}
+.c-two {
+    grid-area:c-two;
+    background-color:cornsilk;
+}
+.c-three {
+    grid-area:c-three;
+    background-color:cornflowerblue;
+}

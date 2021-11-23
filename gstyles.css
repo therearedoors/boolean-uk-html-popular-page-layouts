@@ -1,0 +1,31 @@
+* {
+    margin:0;
+}
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template: 
+    "top-row   top-row   top-row   top-row"   1fr
+    "c-one     c-two     c-three   c-four"    9fr   /
+    4fr 10fr 5fr 1fr;
+}
+.top-row {
+    grid-area: top-row;
+    background-color:antiquewhite;
+}
+.c-one {
+    grid-area: c-one;
+    background-color: aquamarine;
+}
+.c-two {
+    grid-area: c-two;
+    background-color: cadetblue;
+}
+.c-three {
+    grid-area: c-three;
+    background-color: cornflowerblue;
+}
+.c-four {
+    grid-area: c-four;
+    background-color: cyan;
+}
